@@ -67,7 +67,7 @@ class Window(QWidget):
     def dropEvent(self, e):
         magnet = e.mimeData().text()
         if "magnet:" in magnet:
-            call(["torrentstream", "\""+ magnet + "\""])
+            call([_path + "torrentstream", "\""+ magnet + "\""])
 
         elif e.mimeData().hasUrls():
             path = None
@@ -79,7 +79,7 @@ class Window(QWidget):
             if path is None or ".torrent" not in path:
                 self.setStatus("Not a valid torrent or magnet")
             else:
-                call(["torrentstream", path])
+                call([_path + "./torrentstream", path])
 
         else:
             self.setStatus("Not a valid torrent or magnet")
