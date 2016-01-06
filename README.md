@@ -10,6 +10,8 @@ A GUI application for peerflix which allows torrents and magnet links to be drag
 ###Installation
 1. Clone the repository:
 
-       git clone https://github.com/zaiddabaeen/lightstream
+	```
+	git clone https://github.com/zaiddabaeen/lightstream
+	```
 
 2. Create a launcher in your menu to access it faster.
