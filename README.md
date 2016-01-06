@@ -1,5 +1,5 @@
 #LightStream
-![LightStream](http://github.com/zaiddabaeen/lightstream/master/magnet.png)
+![LightStream](https://raw.githubusercontent.com/zaiddabaeen/lightstream/master/magnet.png)
 
 A GUI application for peerflix which allows torrents and magnet links to be dragged to be run by peerflix. Stream your torrents with VLC through GUI.
 
