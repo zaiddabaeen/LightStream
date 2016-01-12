@@ -16,7 +16,9 @@ class Window(QWidget):
         QShortcut(QKeySequence("Ctrl+Q"), self, self.close)
         QShortcut(QKeySequence("Ctrl+W"), self, self.close)
 
+        global padding,size
         size = gtk.gdk.screen_width()/6
+        padding = size/16
 
         self.setWindowTitle('Light Stream')
         self.setFixedSize(size, size)
@@ -33,9 +35,9 @@ class Window(QWidget):
         self.status = QLabel(self)
         self.status.setText("Drag a magnet or torrent")
         self.status.setAlignment(Qt.AlignCenter)
-        self.status.setFixedWidth(size + 2 * padding)
+        self.status.setFixedWidth(size)
         self.status.setStyleSheet("QLabel { background-color: #ddd; }")
-        self.status.setFixedHeight(50)
+        self.status.setFixedHeight(padding*3)
         self.status.move(0, 0)
 
     def setStatus(self, text):
@@ -87,15 +89,6 @@ class Window(QWidget):
         # self.setWindowTitle(e.mimeData().text())
 
         self.setMagnetImage(False)
-        self.setWidgetSize()
-
-    def resizeEvent(self, e):
-        # Does not work
-        if self.width() < 200:
-            e.ignore
-            return
-
-        self.resize(self.width(), self.width())
         self.setWidgetSize()
 
     def setWidgetSize(self):
