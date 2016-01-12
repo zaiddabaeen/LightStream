@@ -4,8 +4,9 @@
 A GUI application for peerflix which allows torrents and magnet links to be dragged to be run by peerflix. Stream your torrents with VLC through GUI.
 
 ###Requirements
-- [Peerflix](https://github.com/mafintosh/peerflix) (`sudo npm install -g peerflix`﻿)
+- [Peerflix](https://github.com/mafintosh/peerflix) (Install using: `sudo npm install -g peerflix`﻿)
 - Python 2.7
+- Linux (Requires GTK)
 
 ###Installation
 1. Clone the repository:
@@ -14,4 +15,5 @@ A GUI application for peerflix which allows torrents and magnet links to be drag
 	git clone https://github.com/zaiddabaeen/lightstream
 	```
 
-2. Create a launcher in your menu to access it faster.
+2. Run `python lightstream.py`
+3. Create a launcher in your menu to access it faster.
