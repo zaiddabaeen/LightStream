@@ -6,7 +6,7 @@ A GUI application for peerflix which allows torrents and magnet links to be drag
 ###Requirements
 - [Peerflix](https://github.com/mafintosh/peerflix) (Install using: `sudo npm install -g peerflix`﻿)
 - Python 2.7
-- Linux (Requires GTK)
+- GTK2
 
 ###Installation
 1. Clone the repository:
